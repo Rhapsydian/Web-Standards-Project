@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Aleta's Archive - Card Search</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+<body>
+	<header>
+		<h1>Welcome to Aleta's Archive</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cards.html">Cards</a></li>
+				<li><a href="decks.html">Decks</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+			<form action="cards.html" method="get">
+				<input type="text" name="name"><input type="submit" value="Search">
+			</form>
+		</nav>
+	</header>
+	<article>
+		<section>
+			<h2>Card Search</h2>
+			<form action="cards.html" method="get">
+				<label for="name">Name:</label><input type="text" name="name" id="name">
+				<label for="text">Text:</label><input type="text" name="text" id="text">
+				<label for="rarity">Rarity:</label>
+				<select name="rarity" id="rarity">
+					<option value="select">Select</option>
+					<option value="common">Common</option>
+					<option value="uncommon">Uncommon</option>
+					<option value="rare">Rare</option>
+					<option value="legendary">Legendary</option>
+					<option value="epic">Epic</option>
+				</select>
+				<label for="type">Type:</label>
+				<select name="type" id="type">
+					<option value="select">Select</option>
+					<option value="ability">Ability</option>
+					<option value="character">Character</option>
+					<option value="location">Location</option>
+				</select>
+				<label for="subtype">Subtype:</label>
+				<select name="subtype" id="subtype">
+					<option value="select">Select</option>
+					<option value="artificial">Artificial</option>
+					<option value="beast">Beast</option>
+					<option value="human">Human</option>
+				</select>
+				<label for="faction">Faction:</label>
+				<select name="faction" id="faction">
+					<option value="select">Select</option>
+					<option value="cultofverore">Cult of Verore</option>
+					<option value="descendantsofthedragon">Descendatns Of The Dragon</option>
+					<option value="factionless">Factionless</option>
+					<option value="flamedawn">Flame Dawn</option>
+					<option value="genesisindustries">Genesis Industries</option>
+					<option value="thewarpath">The Warpath</option>
+				</select>
+				<label for="cost">Cost:</label>
+				<select name="costopperator" id="faction">
+					<option value="=">=</option>
+					<option value="<"><</option>
+					<option value=">">></option>
+				</select>
+				<input type="text" name="cost" id="cost">
+				<label for="power">Power:</label>
+				<select name="poweropperator" id="faction">
+					<option value="=">=</option>
+					<option value="<"><</option>
+					<option value=">">></option>
+				</select>
+				<input type="text" name="power" id="power">
+				<label for="health">Health:</label>
+				<select name="healthopperator" id="faction">
+					<option value="=">=</option>
+					<option value="<"><</option>
+					<option value=">">></option>
+				</select>
+				<input type="text" name="health" id="health">
+				<label for="unlimited">Unlimited:</label><input type="checkbox" name="unlimited" id="unlimited">
+				<label for="unique">Unique:</label><input type="checkbox" name="unique" id="unique">
+				<label for="token">Token:</label><input type="checkbox" name="token" id="token">
+				Display Mode:
+				<label for="display_images">Images</label><input type="radio" name="display" id="display_images" value="images">
+				<label for="display_text">Text</label><input type="radio" name="display" id="display_text" value="text">
+				<input type="submit" value="Search">
+			</form>
+			<fieldset>
+				<legend>Need Help?</legend>
+				<p>Enter in values into the provided fields to apply filters to your search results.</p>
+			</fieldset>
+		</section>
+		<hr>
+		<section>
+		</section>
+	</article>
+</body>
+</html>
