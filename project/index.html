@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Aleta's Archive - Welcome</title>
+	<link href='http://fonts.googleapis.com/css?family=Inder|Macondo+Swash+Caps' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -11,21 +12,24 @@
 </head>
 <body>
 	<header>
-		<h1>Welcome to Aleta's Archive</h1>
+		<h1><a href="index.html">Aleta's Archive</a></h1>
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="cards.html">Cards</a></li>
-				<li><a href="decks.html">Decks</a></li>
-				<li><a href="register.html">Register</a></li>
-				<li><a href="login.html">Login</a></li>
-			</ul>
-			<form action="cards.html" method="get">
-				<input type="text" name="name"><input type="submit" value="Search">
-			</form>
+			<div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="cards.html">Cards</a></li>
+					<li><a href="decks.html">Decks</a></li>
+					<li>|</li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="login.html">Login</a></li>
+				</ul>
+				<form action="cards.html" method="get">
+					<input type="text" name="name"><input type="submit" value="Search">
+				</form>
+			</div>
 		</nav>
 	</header>
-	<article>
+	<article  id="home_cta">
 		<section>
 			<h2>Sign Up Now!</h2>
 			<ul>
@@ -33,23 +37,25 @@
 				<li>Rate cards &amp; decks</li>
 				<li>Discuss cards &amp; decks with other players</li>
 			</ul>
-			<input type="button" value="Register Here">
+			<form action="register.html" method="post">
+				<input type="submit" value="Register Here">
+			</form>
 		</section>
 	</article>
-	<article>
+	<article id="home_welcome">
 		<section>
 			<h2>Welcome</h2>
-			<p>Fan of Infinity Wars? Have a brilliant deck idea you want to share or need to look of a card? Then you've come to the right place. Welcome to Aleta's Archive, a card and deck database for everyone's favorite digital trading card game.</p>
+			<p>Fan of Infinity Wars? Have a brilliant deck idea you want to share or need to look up a card? Then you've come to the right place. Welcome to Aleta's Archive, a card and deck database for everyone's favorite digital trading card game.</p>
 			<p>Head over to the Cards section to browse the card database and refine your search with a number of filters or seek inspiration from other players in the Decks section.</p>
 		</section>
 	</article>
-	<article>
+	<article id="home_toprated">
 		<section>
 			<h2>Top Rated Cards</h2>
 			<ul>
-				<li><img src="images/aletaimmortalsorceress.jpg"></li>
-				<li><img src="images/aletaimmortaltinkerer.jpg"></li>
-				<li><img src="images/agentcoylefirestarter.jpg"></li>
+				<li><a href="#"><img src="images/cards/aletaimmortalsorceress.jpg" alt="Aleta, Immortal Sorceress"></a></li>
+				<li><a href="aletaimmortaltinkerer.html"><img src="images/cards/aletaimmortaltinkerer.jpg" alt="Aleta, Immortal Tinkerer"></a></li>
+				<li><a href="#"><img src="images/cards/agentcoylefirestarter.jpg" alt="Aleta, Immortal Tinkerer"></a></li>
 			</ul>
 		</section>
 	</article>
