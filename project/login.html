@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Aleta's Archive - Account Login</title>
+	<link href='http://fonts.googleapis.com/css?family=Inder|Macondo+Swash+Caps' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -23,7 +24,7 @@
 					<li><a href="login.html">Login</a></li>
 				</ul>
 				<form action="cards.html" method="get">
-					<input type="text" name="name"><input type="submit" value="Search">
+					<input type="text" name="name" value="Enter Card Name"><input type="submit" value="Search">
 				</form>
 			</div>
 		</nav>
@@ -31,6 +32,13 @@
 	<article>
 		<section>
 			<h2>Account Login</h2>
+			<form>
+				<label for="email">Email:</label><input type="text" id="email" name="email">
+				<label for="password">Password:</label><input type="password" id="password" name="password">
+				<label for="keep">Keep me logged in</label><input type="checkbox" id="keep" name="keep">
+				<input type="submit" value="Login">
+				<a href="#">Forgot password?</a>
+			</form>
 		</section>
 	</article>
 </body>

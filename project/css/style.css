@@ -68,6 +68,22 @@ nav form {
 	float:right;
 }
 
+nav input[type='text'] {
+	margin-right:5px;
+	border:1px solid #000;
+	text-align:center;
+	font-family: 'Inder', sans-serif;
+	font-size:16px;
+	line-height:26px;
+	color:#777;
+}
+
+nav input[type='submit'] {
+	font-weight:bold;
+	border:1px solid #000;
+	border-radius:5px;
+}
+
 /* ----- Global Styles ----- */
 body {
 	background-color:#000;
@@ -93,6 +109,7 @@ section {
 	background-image:url('../images/bg_paper.jpg');
 	border-radius:6px;
 	padding:0px 14px;
+	overflow:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -119,7 +136,9 @@ label {
 	margin-bottom:10px;
 }
 
+
 fieldset {
+	border:2px solid #000;
 	border-radius:10px;
 }
 
@@ -237,7 +256,6 @@ hr {
 }
 
 #cards fieldset {
-	border:2px solid #000;
 	width:330px;
 	float:right;
 }
@@ -257,6 +275,33 @@ hr {
 #cards #results img {
 	display:block;
 	border-radius:20px;
+}
+
+/* ----- Page Specific - Card View ----- */
+
+#card_image {
+	float:left;
+	width:50%;
+	text-align:right;
+}
+
+#card_image img {
+	border-radius:20px;
+	margin-right:5px;
+}
+
+#card_info {
+	float:left;
+	width:50%;
+}
+
+#card_info table, #card_info fieldset {
+	margin-left:5px;
+}
+
+#card_info .label {
+	padding-right:5px;
+	text-align:right;
 }
 
 /* ----- Media Queries ----- */
@@ -290,7 +335,7 @@ hr {
 @media screen and (max-width:790px){
 	#home_cta {
 		float:none;
-		width:100%;
+		width:auto;
 	}
 	
 	#home_cta input {
@@ -299,7 +344,7 @@ hr {
 	
 	#home_welcome {
 		float:none;
-		width:100%;
+		width:auto;
 	}
 }
 

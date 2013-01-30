@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Aleta's Archive - Membership Registration</title>
+	<link href='http://fonts.googleapis.com/css?family=Inder|Macondo+Swash+Caps' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -23,7 +24,7 @@
 					<li><a href="login.html">Login</a></li>
 				</ul>
 				<form action="cards.html" method="get">
-					<input type="text" name="name"><input type="submit" value="Search">
+					<input type="text" name="name" value="Enter Card Name"><input type="submit" value="Search">
 				</form>
 			</div>
 		</nav>
@@ -31,6 +32,22 @@
 	<article>
 		<section>
 			<h2>Membership Registration</h2>
+			<form>
+				<label for="username">Username:</label><input type="text" id="username" name="username">
+				<label for="email">Email:</label><input type="text" id="email" name="email">
+				<label for="emailconfirm">Confirm:</label><input type="text" id="emailconfirm" name="emailconfirm">
+				<label for="password">Password:</label><input type="password" id="password" name="password">
+				<label for="passwordconfirm">Confirm:</label><input type="password" id="passwordconfirm" name="passwordconfirm">
+				<input type="submit" value="Register">
+			</form>
+			<fieldset>
+				<legend>Why Register?</legend>
+				<ul>
+					<li>Creat &amp; share decks</li>
+					<li>Rate cards &amp; decks</li>
+					<li>Discuss cards &amp; decks with other players</li>
+				</ul>
+			</fieldset>
 		</section>
 	</article>
 </body>

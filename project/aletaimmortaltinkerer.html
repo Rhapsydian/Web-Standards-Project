@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Aleta's Archive - Aleta, Immortal Tinkerer</title>
+	<link href='http://fonts.googleapis.com/css?family=Inder|Macondo+Swash+Caps' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -23,7 +24,7 @@
 					<li><a href="login.html">Login</a></li>
 				</ul>
 				<form action="cards.html" method="get">
-					<input type="text" name="name"><input type="submit" value="Search">
+					<input type="text" name="name" value="Enter Card Name"><input type="submit" value="Search">
 				</form>
 			</div>
 		</nav>
@@ -31,35 +32,39 @@
 	<article>
 		<section>
 			<h2>Aleta, Immortal Tinkerer</h2>
-			<img src="images/cards/aletaimmortaltinkerer_large.jpg" alt="Aleta, Immortal Tinkerer">
-			<table>
-				<tr>
-					<td>Faction:</td><td>Genesis Industries</td>
-				</tr>
-				<tr>
-					<td>Purity:</td><td>1</td>
-				</tr>
-				<tr>
-					<td>Cost:</td><td>5</td>
-				</tr>
-				<tr>
-					<td>Type:</td><td>Character - Human - Unique</td>
-				</tr>
-				<tr>
-					<td>Power:</td><td>3</td>
-				</tr>
-				<tr>
-					<td>Health:</td><td>8</td>
-				</tr>
-				<tr>
-					<td>Rarity:</td><td>Rare</td>
-				</tr>
-			</table>
-			<fieldset>
-				<legend>Card Text</legend>
-				<p>If Aleta is in the graveyard for 6 consecutive turns, she returns to play. Exhaust: Target artificial character gets +1/+1 permanently.</p>
-			</fieldset>
-			<div id="rating"></div>
+			<div id="card_image">
+				<img src="images/cards/aletaimmortaltinkerer_large.jpg" alt="Aleta, Immortal Tinkerer">
+			</div>
+			<div id="card_info">
+				<table>
+					<tr>
+						<td class="label">Faction:</td><td>Genesis Industries</td>
+					</tr>
+					<tr>
+						<td class="label">Purity:</td><td>1</td>
+					</tr>
+					<tr>
+						<td class="label">Cost:</td><td>5</td>
+					</tr>
+					<tr>
+						<td class="label">Type:</td><td>Character - Human - Unique</td>
+					</tr>
+					<tr>
+						<td class="label">Power:</td><td>3</td>
+					</tr>
+					<tr>
+						<td class="label">Health:</td><td>8</td>
+					</tr>
+					<tr>
+						<td class="label">Rarity:</td><td>Rare</td>
+					</tr>
+				</table>
+				<fieldset>
+					<legend>Card Text</legend>
+					<p>If Aleta is in the graveyard for 6 consecutive turns, she returns to play. Exhaust: Target artificial character gets +1/+1 permanently.</p>
+				</fieldset>
+				<div id="rating"></div>
+			</div>
 		</section>
 	</article>
 </body>
