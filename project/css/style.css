@@ -84,6 +84,12 @@ nav input[type='submit'] {
 	border-radius:5px;
 }
 
+/* ----- Nav Highlight ----- */
+
+#home #nav_home a, #cards #nav_cards a, #card #nav_cards a, #decks #nav_decks a, #login #nav_login a, #register #nav_register a {
+	color:#00d;
+}
+
 /* ----- Global Styles ----- */
 body {
 	background-color:#000;
@@ -287,7 +293,7 @@ hr {
 
 #card_image img {
 	border-radius:20px;
-	margin-right:5px;
+	margin:0px 5px 20px 0px;
 }
 
 #card_info {
@@ -303,6 +309,96 @@ hr {
 	padding-right:5px;
 	text-align:right;
 }
+
+/* ----- Page Specific - Decks ----- */
+#decks_form {
+	display:block;
+	overflow:hidden;
+	width:565px;
+	margin-bottom:20px;
+}
+
+#decks_form .form_column {
+	display:inline-block;
+	width:280px;
+}
+
+#decks_form select {
+	margin-left:-5px;
+	width:188px;
+}
+
+#decks_form label {
+	width:78px;
+}
+
+#decks_form input[type='text'] {
+	width:184px;
+}
+
+#decks_form input[type='submit'] {
+	margin:0px 10px 0px 20px;
+}
+
+#decks fieldset {
+	width:330px;
+	float:right;
+}
+
+.decks_result {
+	border-top:2px solid #000;
+	padding:10px 0px;
+}
+
+.decks_name {
+	font-weight:bold;
+}
+
+.decks_rating {
+	float:right;
+}
+
+/* ----- Page Specific - Login ----- */
+
+#login_form {
+	display:block;
+	width:275px;
+	margin:0px auto 20px;
+}
+
+#keep_label {
+	width:auto;
+}
+
+#login_form  input[type='submit'] {
+	float:right;
+}
+
+/* ----- Page Specific - Register ----- */
+
+#register section {
+	text-align:center;
+}
+
+#register_form {
+	display:inline-block;
+	width:278px;
+	margin:0px 10px 20px;
+	text-align:right;
+	vertical-align:top;
+}
+
+#register_form  label{
+	width:78px;
+}
+
+#register fieldset {
+	display:inline-block;
+	width:278px;
+	text-align:left;
+	margin-bottom:20px;
+}
+
 
 /* ----- Media Queries ----- */
 
@@ -323,12 +419,18 @@ hr {
 		width:63.9583%
 	}
 	
-	#cards_form {
+	#cards_form, #decks_form {
 		margin:0px auto;
 	}
 	
-	#cards fieldset {
+	#cards fieldset, #decks fieldset {
 		display:none;
+	}
+}
+
+@media screen and (max-width:828px){
+	#card_image img {
+		width:100%;
 	}
 }
 
@@ -376,13 +478,28 @@ hr {
 }
 
 @media screen and (max-width:593px){
-	#cards_form {
+	#cards_form, #decks_form {
 		width:100%;
 	}
 	
-	#cards_form .form_column {
+	#cards_form .form_column, #decks_form .form_column {
 		display:block;
 		margin:0px auto;
+	}
+}
+
+@media screen and (max-width:553px){
+	#card_image, #card_info {
+		float:none;
+		width:auto;
+	}
+	
+	#card_image img, #card_info table, #card_info fieldset {
+		margin:0px;
+	}
+	
+	#card_info {
+		margin-bottom:20px;
 	}
 }
 

@@ -10,7 +10,7 @@
 		</script>
 	<![endif]-->
 </head>
-<body>
+<body id="login">
 	<header>
 		<h1><a href="index.html">Aleta's Archive</a></h1>
 		<nav>
@@ -32,11 +32,11 @@
 	<article>
 		<section>
 			<h2>Account Login</h2>
-			<form>
+			<form id="login_form">
 				<label for="email">Email:</label><input type="text" id="email" name="email">
 				<label for="password">Password:</label><input type="password" id="password" name="password">
-				<label for="keep">Keep me logged in</label><input type="checkbox" id="keep" name="keep">
-				<input type="submit" value="Login">
+				<label id="keep_label" for="keep">Keep me logged in</label><input type="checkbox" id="keep" name="keep">
+				<input type="submit" value="Login"><br>
 				<a href="#">Forgot password?</a>
 			</form>
 		</section>

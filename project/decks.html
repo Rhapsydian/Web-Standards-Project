@@ -10,7 +10,7 @@
 		</script>
 	<![endif]-->
 </head>
-<body>
+<body  id="decks">
 	<header>
 		<h1><a href="index.html">Aleta's Archive</a></h1>
 		<nav>
@@ -36,48 +36,61 @@
 					<legend>Need Help?</legend>
 					<p>Enter in values into the provided fields to apply filters to your search results.</p>
 			</fieldset>
-			<form>
-				<label for="name">Deck Name:</label><input type="text" id="name" name="name">
-				<label for="commander">Commander:</label><input type="text" id="commander" name="commander">
-				<label for="contains">Contains:</label><input type="text" id="contains" name="contains">
-				<label for="faction1">Faction 1:</label>
-				<select id="faction1" name="faction1">
-					<option value="select">Select</option>
-					<option value="cultofverore">Cult of Verore</option>
-					<option value="descendantsofthedragon">Descendatns Of The Dragon</option>
-					<option value="factionless">Factionless</option>
-					<option value="flamedawn">Flame Dawn</option>
-					<option value="genesisindustries">Genesis Industries</option>
-					<option value="thewarpath">The Warpath</option>
-				</select>
-				<label for="faction2">Faction 2:</label>
-				<select id="faction2" name="faction2">
-					<option value="select">Select</option>
-					<option value="cultofverore">Cult of Verore</option>
-					<option value="descendantsofthedragon">Descendatns Of The Dragon</option>
-					<option value="factionless">Factionless</option>
-					<option value="flamedawn">Flame Dawn</option>
-					<option value="genesisindustries">Genesis Industries</option>
-					<option value="thewarpath">The Warpath</option>
-				</select>
-				<label for="faction3">Faction 3:</label>
-				<select id="faction3" name="faction3">
-					<option value="select">Select</option>
-					<option value="cultofverore">Cult of Verore</option>
-					<option value="descendantsofthedragon">Descendatns Of The Dragon</option>
-					<option value="factionless">Factionless</option>
-					<option value="flamedawn">Flame Dawn</option>
-					<option value="genesisindustries">Genesis Industries</option>
-					<option value="thewarpath">The Warpath</option>
-				</select>
-				<input type="submit" value="Search">
+			<form id="decks_form">
+				<div class="form_column">
+					<label for="name">Name:</label><input type="text" id="name" name="name">
+					<label for="commander">Command:</label><input type="text" id="commander" name="commander">
+					<label for="contains">Contains:</label><input type="text" id="contains" name="contains">
+				</div>
+				<div class="form_column">
+					<label for="faction1">Faction 1:</label>
+					<select id="faction1" name="faction1">
+						<option value="select">Select</option>
+						<option value="cultofverore">Cult of Verore</option>
+						<option value="descendantsofthedragon">Descendants Of The Dragon</option>
+						<option value="factionless">Factionless</option>
+						<option value="flamedawn">Flame Dawn</option>
+						<option value="genesisindustries">Genesis Industries</option>
+						<option value="thewarpath">The Warpath</option>
+					</select>
+					<label for="faction2">Faction 2:</label>
+					<select id="faction2" name="faction2">
+						<option value="select">Select</option>
+						<option value="cultofverore">Cult of Verore</option>
+						<option value="descendantsofthedragon">Descendants Of The Dragon</option>
+						<option value="factionless">Factionless</option>
+						<option value="flamedawn">Flame Dawn</option>
+						<option value="genesisindustries">Genesis Industries</option>
+						<option value="thewarpath">The Warpath</option>
+					</select>
+					<label for="faction3">Faction 3:</label>
+					<select id="faction3" name="faction3">
+						<option value="select">Select</option>
+						<option value="cultofverore">Cult of Verore</option>
+						<option value="descendantsofthedragon">Descendants Of The Dragon</option>
+						<option value="factionless">Factionless</option>
+						<option value="flamedawn">Flame Dawn</option>
+						<option value="genesisindustries">Genesis Industries</option>
+						<option value="thewarpath">The Warpath</option>
+					</select>
+				</div>
+				<div class="right">
+					<input type="submit" value="Search">
+				</div>
 			</form>
-			<hr>
-			<div>
-				<div>Mechadin</div>
-				<div>Commanders: <a href="aletaimmortaltinkerer.html">Aleta, Immortal Tinkerer</a> | <a href="#">Paladin of the Flame Dawn</a> | <a href="#">Secluded Contructor</a></div>
-				<div>Faction(s): Genesis Industries x 2 | Flame Dawn</div>
-				<div>Rating: 4.3</div>
+			<div class="decks_result">
+				<div>
+					<span class="decks_name"><a href="#">Mechadin</a></span><span class="decks_rating">Rating: 4.3</span>
+				</div>
+				<div class="decks_command">Commanders: <a href="aletaimmortaltinkerer.html">Aleta, Immortal Tinkerer</a> | <a href="#">Paladin of the Flame Dawn</a> | <a href="#">Secluded Contructor</a></div>
+				<div class="decks_faction">Faction(s): Genesis Industries x 2 | Flame Dawn</div>
+			</div>
+			<div class="decks_result">
+				<div>
+					<span class="decks_name"><a href="#">Immortal Dragon</a></span><span class="decks_rating">Rating: 3.9</span>
+				</div>
+				<div class="decks_command">Commanders: <a href="#">Dragon of Wisdom</a> | <a href="#">Sage 1</a> | <a href="#">Sage 2</a></div>
+				<div class="decks_faction">Faction(s): Descendants Of The Dragon</div>
 			</div>
 		</section>
 	</article>
