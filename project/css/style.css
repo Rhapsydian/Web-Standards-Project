@@ -348,6 +348,33 @@ hr {
 	}
 }
 
+@media screen and (max-width:746px){
+	nav form {
+		float:none;
+		clear:both;
+		text-align:center;
+	}
+	
+	nav ul {
+		display:block;
+		overflow:hidden;
+		text-align:center;
+	}
+	
+	nav li {
+		float:none;
+		display:inline-block;
+	}
+	
+	nav li {
+		margin:0px 10px;
+	}
+	
+	#nav_divide {
+		display:none;
+	}
+}
+
 @media screen and (max-width:593px){
 	#cards_form {
 		width:100%;
